@@ -1,28 +1,35 @@
+.fade-enter {
+    opacity: 1;
+    transform: scale(100%);
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: scale(0);
+    transition: all 0.4s ease-out;
+}
+
+.fade-leave {
+    opacity: 1;
+    transform: scale(0);
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 1;
+    transform: scale(-100%);
+    transition: all 0.4s ease-out;
+}
+
 .App {
-  text-align: center;
+    height: 100%;
+    background-image: url('./assets/bg.jpg');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App img {
+    width: 100%;
+    display: block;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.slick-dots li.slick-active button:before , .slick-dots li button:before{
+    color: #fff;
 }

@@ -1,0 +1,94 @@
+*{
+    outline: none;
+}
+
+
+.Carousel, .SubPage1, .SubPage2, .SubPage3, .SubSlider{
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Carousel a {
+    position: absolute;
+    top: 10%;
+    height: 72%;
+    width: 160px;
+    color: transparent;
+    transform: translateX(-77px);
+}
+
+.GoBack{
+    position: fixed;
+    top: 14px;
+    left: 16px;
+    width: 16%;
+    z-index: 99;
+}
+
+.GoBack img {
+    width: 30%;
+}
+
+.SubImg img {
+    width: 100%;
+}
+
+.SubPage1 .SubImg a {
+    position: absolute;
+    top: 18%;
+    left: 68%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .SubPage2{
+
+} */
+.SubPage3-Game{
+    padding-top: 18%;
+}
+
+.SubPage3-Game a{
+    position: fixed;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28%;
+    z-index: 999;
+}
+
+.Phone-SubSlider{
+    padding-top: 42%;
+}
+
+.ImgSub{
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+.ImgSub-1{
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.Price {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 53%;
+    margin-bottom: 4%
+}
+
+.slick-slider, .slick-list, .slick-track {
+    height: 100%;
+}
+
+.slick-dots{
+    bottom: 40px;
+}

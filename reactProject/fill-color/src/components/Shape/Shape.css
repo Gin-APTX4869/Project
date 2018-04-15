@@ -1,0 +1,291 @@
+/* 公共样式 */
+
+.box {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%);    
+    width: 360px;
+    height: 580px;
+}
+
+
+.Bg,
+.BodyBg,
+.HeadBg {
+    pointer-events: none;
+}
+
+.Bg,
+.ColorBg,
+.BodyBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Bg {
+    width: 100%;
+}
+
+.ColorBg {
+    width: 98%;
+}
+
+.BodyBg {
+    top: 52%;
+    width: 82%;
+}
+
+/* 身体分布 */
+
+.Wingsl,
+.Wingsr {
+    position: absolute;
+    top: 285px;
+    width: 30%;
+    transform: translateY(-50%);
+}
+
+.Wingsl {
+    left: 39px;
+}
+
+.Wingsr {
+    right: 39px;
+}
+
+.Bodyl,
+.Bodyr {
+    position: absolute;
+    bottom: 149px;
+    width: 14%;
+    transform: translateY(-50%);
+}
+
+.Bodyl {
+    left: 120px;
+}
+
+.Bodyr {
+    right: 120px;
+}
+
+.Bodyc {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    width: 21.75%;
+    transform: translate(-50%, -50%);
+}
+
+.Pawsl,
+.Pawsr {
+    position: absolute;
+    bottom: 153px;
+    width: 13%;
+    transform: translateY(-50%);
+}
+
+.Pawsl {
+    left: 123px;
+}
+
+.Pawsr {
+    right: 123px;
+}
+
+.Pawsc {
+    position: absolute;
+    bottom: 158px;
+    left: 50%;
+    width: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.Fingernaill,
+.Fingernailr {
+    position: absolute;
+    bottom: 150px;
+    width: 12%;
+    transform: translateY(-50%);
+}
+
+.Fingernaill {
+    left: 125px;
+}
+
+.Fingernailr {
+    right: 125px;
+}
+
+.Belll {
+    position: absolute;
+    bottom: 147px;
+    left: 87px;
+    width: 10.3%;
+    transform: translateY(-50%);
+}
+
+.Bellr {
+    position: absolute;
+    bottom: 149px;
+    right: 87px;
+    width: 10.3%;
+    transform: translateY(-50%);
+}
+
+.Bellcl {
+    position: absolute;
+    bottom: 145px;
+    left: 85px;
+    width: 7.3%;
+    transform: translateY(-50%);
+}
+
+.Bellcr {
+    position: absolute;
+    bottom: 140px;
+    right: 84px;
+    width: 7.3%;
+    transform: translateY(-50%);
+}
+
+.HeadBg {
+    position: absolute;
+    top: 277px;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.HeadColorBg {
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    width: 57.1%;
+    transform: translate(-50%, -50%);
+}
+
+.HeadAngle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 17%;
+    transform: translate(-50%, -50%);
+}
+
+.Beard {
+    position: absolute;
+    top: 345px;
+    left: 50%;
+    width: 27.4%;
+    transform: translate(-50%, -50%);
+}
+
+.BeardBg {
+    position: absolute;
+    top: 313px;
+    left: 50%;
+    width: 30.5%;
+    transform: translate(-50%, -50%);
+}
+
+.BeardBgSmall {
+    position: absolute;
+    top: 337px;
+    left: 50%;
+    width: 11%;
+    transform: translate(-50%, -50%);
+}
+
+.WhitesEyel,
+.WhitesEyer {
+    position: absolute;
+    top: 273px;
+    width: 7.6%;
+    transform: translate(-50%, -50%);
+}
+
+.WhitesEyel {
+    left: 38%;
+}
+
+.WhitesEyer {
+    right: 30.3%;
+}
+
+.Pupill,
+.Pupilr {
+    position: absolute;
+    top: 271px;
+    width: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.Pupill {
+    left: 138px;
+}
+
+.Pupilr {
+    right: 116.1px;
+}
+
+.Moustache {
+    position: absolute;
+    top: 313.5px;
+    left: 50%;
+    width: 28.5%;
+    transform: translate(-50%, -50%);
+}
+
+.Nose {
+    position: absolute;
+    top: 294.5px;
+    left: 50%;
+    width: 10.5%;
+    transform: translate(-50%, -50%);
+}
+
+.Toothl,
+.Toothr {
+    position: absolute;
+    top: 337.5px;
+    width: 2.5%;
+    transform: translate(-50%, -50%);
+}
+
+.Toothl {
+    left: 149px;
+}
+
+.Toothr {
+    right: 140.1px;
+}
+
+.Patternl,
+.Patternr {
+    position: absolute;
+    top: 277.5px;
+    width: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.Patternl {
+    left: 109.6px;
+}
+
+.Patternr {
+    right: 44.9px;
+}
+
+
+/* 画板定位 */
+
+.picker {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
