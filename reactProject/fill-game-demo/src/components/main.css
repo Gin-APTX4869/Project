@@ -1,0 +1,38 @@
+.Container {
+  background-image: url("../assets/Images/Carousel/bg.jpg");
+  height: 100%; }
+  .Container .Home a {
+    position: absolute;
+    top: 10%;
+    height: 72%;
+    width: 160px;
+    color: transparent;
+    -webkit-transform: translateX(-77px);
+    -ms-transform: translateX(-77px);
+    transform: translateX(-77px); }
+  .Container .Price {
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    width: 12rem;
+    transform: translateX(-50%);
+    z-index: 999; }
+  .Container .Game {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    width: 7rem;
+    transform: translateX(-50%);
+    z-index: 999; }
+  .Container .SubSlider {
+    transform: translateY(9rem); }
+  .Container .SubGame {
+    transform: translateY(5rem); }
+  .Container .SubA {
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    height: 7rem;
+    width: 4rem; }
+  .Container .SubImg {
+    width: 90% !important; }

@@ -1,0 +1,40 @@
+.fade-enter {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 2.5s ease; }
+
+.slick-dots {
+  bottom: 6rem; }
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #fff; }
+
+.App > div {
+  height: 100%;
+  text-align: center; }
+
+.App {
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../../assets/Images/Carousel/bg.jpg"); }
+  .App img {
+    width: 100%;
+    display: block; }
+  .App .GoBack {
+    position: fixed;
+    top: 14px;
+    left: 16px;
+    width: 16%;
+    z-index: 99; }
+  .App .GoBack img {
+    width: 30%; }
+  .App .Loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 5rem;
+    transform: translate(-50%, -50%); }
