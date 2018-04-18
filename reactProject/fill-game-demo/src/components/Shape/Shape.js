@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {CirclePicker} from 'react-color'
+import {CirclePicker} from 'react-color'    
 import './Shape.css'
 
 import Back from '../../assets/Images/back.png'
@@ -33,7 +33,8 @@ class Shape extends Component {
         Toothr: '#fff',
         Patternl: '#e1e1e1',
         Patternr: '#e1e1e1',
-        currentColor: '#fff'
+        currentColor: '#fff',
+        refresh: '#fff'
     }
 
     handlerChange = (color) => {
@@ -48,6 +49,7 @@ class Shape extends Component {
         e.stopPropagation()
         this.props.history.goBack()
     }
+
 
     render() {
         return (

@@ -9,6 +9,13 @@
     height: 580px;
 }
 
+.Clear {
+    position: absolute;
+    top: 26px;
+    width: 5%;
+    right: 40px;
+}
+
 
 .Bg,
 .BodyBg,
