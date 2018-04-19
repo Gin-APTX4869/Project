@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
 import './App.css'
 
+import Appbar from 'muicss/lib/react/appbar'
 import Panel from 'muicss/lib/react/panel'
 import Calculator from './components/Calculator'
+import Container from 'muicss/lib/react/container'
 
 const API_ID = "59598"
 const API_SECRET = "941661ba0a344863850ef3ae3b7d593a"
@@ -12,9 +14,8 @@ class App extends Component {
     super(props)
     this.state = {
       data: [],
-      currentRate: '0',
-      count: '0',
-      left: false
+      currentRate: '',
+      count: '0'
     }
   }
 
@@ -53,18 +54,20 @@ class App extends Component {
     const {count} = this.state
     return (
       <div>
-        <Panel>
-          当前汇率
-        </Panel>
-        <Panel>
-          <Calculator
-            data={data}
-            currentRate={currentRate}
-            count={count}
-            changeHandler={this.changeHandler}
-            calculatorHandler={this.calculatorHandler}
-            clearHandler={this.clearHandler}/>
-        </Panel>
+        <Appbar></Appbar>
+        <Panel></Panel>
+        <Container fluid={true}>
+          <Panel>
+            <Calculator
+              data={data}
+              currentRate={currentRate}
+              count={count}
+              changeHandler={this.changeHandler}
+              calculatorHandler={this.calculatorHandler}
+              clearHandler={this.clearHandler}/>
+          </Panel>
+        </Container>
+        <Panel></Panel>
       </div>
     )
   }

@@ -10,7 +10,7 @@ const Calculator = (props) => {
   return (
     <div>
       <Form onSubmit={props.calculatorHandler}>
-        <Input label="买入价" name="price" floatingLabel={true}/>
+        <Input label="买入价" name="price" floatingLabel={true} required={true}/>
         <Select name="input" label="选择币种" onChange={props.changeHandler}>
           {props
             .data
@@ -21,16 +21,17 @@ const Calculator = (props) => {
           }
         </Select>
         <Input
+          onChange={props.changeHandler}
           label="当前汇率"
           name="rate"
           floatingLabel={true}
           value={props.currentRate}
           disabled/>
-        <Input label="个数" name="number" floatingLabel={true}/>
+        <Input label="个数" name="number" floatingLabel={true} required={true}/>
         <Button variant="raised" color="primary">计算</Button>
       </Form>
       <Button variant="raised" onClick={props.clearHandler}>清零</Button>
-      <div className="mui--text-caption">折合人民币：{props.count}</div>
+      <div className="mui--text-caption">折合人民币：{props.count}元</div>
     </div>
   )
 }
