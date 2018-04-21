@@ -31,7 +31,7 @@ const Calculator = (props) => {
         <Button variant="raised" color="primary">计算</Button>
       </Form>
       <Button variant="raised" onClick={props.clearHandler}>清零</Button>
-      <div className="mui--text-caption">折合人民币：{props.count}元</div>
+      <div className="mui--text-caption">单价折合人民币：{props.count}元</div>
     </div>
   )
 }
