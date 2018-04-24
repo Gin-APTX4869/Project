@@ -14,24 +14,27 @@ class CtrCalculator extends Component {
   }
 
   componentDidMount = () => {
-    this.getData()
+    fetch(`http://route.showapi.com/105-30?code=&showapi_appid=${API_ID}&showapi_sign=${API_SECRET}`)
+      .then(res => res.json())
+      .then(parsedJSON => {
+        const datas = parsedJSON
+          .showapi_res_body
+          .list
+          .filter(({zhesuan}) => zhesuan > 450 || zhesuan < 100)
+        const updated = datas.map(data => {
+          return {
+            ...data
+          }
+        })
+        this.setState({data: updated})
+      })
   }
 
-  getData = () => {
-    fetch(`http://route.showapi.com/105-30?code=&showapi_appid=${API_ID}&showapi_sign=${API_SECRET}`)
-         .then ( res => res.json())
-         .then(parsedJSON => {
-           const datas = parsedJSON.showapi_res_body.list.filter(({zhesuan})=>zhesuan > 450 || zhesuan < 100)
-           const updated = datas.map(item => ({name: `${item.name}`, zhesuan: `${item.zhesuan}`}))
-           this.setState({data: updated})
-         })
-          //  const data = res.showapi_res_body.list.slice(0,5)
-          //  this.setState({data: data})
-         
-      // .then(res => res.json())
-      // .then(parsedJSON => parsedJSON.showapi_res_body.list.map(item => ({name: `${item.name}`, zhesuan: `${item.zhesuan}`})))
-      // .then(data => this.setState({data}))
-  }
+  // getData = () => {         //  const data =
+  // res.showapi_res_body.list.slice(0,5)         //  this.setState({data: data})
+  //    // .then(res => res.json())     // .then(parsedJSON =>
+  // parsedJSON.showapi_res_body.list.map(item => ({name: `${item.name}`, zhesuan:
+  // `${item.zhesuan}`})))     // .then(data => this.setState({data})) }
 
   changeHandler = (e) => {
     this.setState({currentRate: e.target.value})
